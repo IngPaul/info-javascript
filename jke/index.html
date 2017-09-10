@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Javascript</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <style>
+        .problem {
+            color: #ff0000;
+        }
+        
+        h1 {
+            font-family: 'Open Sans';
+            font-weight: 300;
+            text-transform: uppercase;
+            color: cadetblue;
+            padding: 2px;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: '800';
+            text-align: center;
+        }
+        
+        .etiqueta1 {
+            align-items: center;
+        }
+        
+        .container {
+            background-color: #ccddaa;
+        }
+        
+         :-moz-placeholder {
+            color: blue;
+        }
+        
+         ::-webkit-input-placeholder {
+            color: blue;
+        }
+        
+        #Num_evenOdd {
+            padding: 8px;
+            font-size: 16px;
+        }
+        
+        #Btn_evenOdd {
+            padding: 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 3px;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <h1>Ejercicios Javascript</h1>
+    <p class="problem">Tomando como entrada un número entero, imprimir si es par o impar</p>
+    <div class="container">
+        <label id="etiqueta1">Campo de entrada</label>
+        <form class="exercise1_form" action="summit" id="exercise1_form">
+            <div>
+                <input type="text" name="Num_evenOdd" id="Num_evenOdd" placeholder="Ingresa un numero entero">
+                <button type="button" id="Btn_evenOdd" onclick="Summit()">Comprobar si es par o impar</button>
+            </div>
+        </form>
+    </div>
+
+    <h1 id="impresion"></h1>
+
+</body>
+<script>
+    function Summit() {
+        var Num_evenOdd = document.getElementById("Num_evenOdd").value;
+        console.log(Num_evenOdd);
+        if (Num_evenOdd % 2 == 0) {
+            document.getElementById("impresion").innerHTML = "El numero introducido es par";
+        } else {
+            document.getElementById("impresion").innerHTML = "El numero introducido es impar";
+        }
+    }
+</script>
+
+</html>
