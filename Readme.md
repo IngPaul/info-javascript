@@ -157,4 +157,11 @@ En que momento se imprime el bloque de codigo
 ***nan (Not At Number)*** que no es un numero, o tambien es la representacion del infinito 
  
 
+### Scope
+Coleccion de variables y objetos que estan a tu alcance dentro de un bloque de codigo
+
+Global
+Es todo aquello que esta fuera de un bloque que pertenece a una funcion
+
+
 
